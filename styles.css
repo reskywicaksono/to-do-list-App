@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background:linear-gradient(135deg, #153677, #4e085f);
+  padding: 20px;
+}
+
+.todo-app{
+  max-width: 600px;
+  background: #fff;
+  margin: auto;
+  padding: 30px;
+}
+
+.profile{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-img{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4e085f;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile h3{
+  margin: 5px 0;
+}
+
+.profile p{
+  font-size: 14px;
+  color: #777;
+}
+
+.profile span{
+  font-size: 14px;
+  color: #555;
+}
+
+.profile-img:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 480px){
+.row{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+}
+
+.row{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.row input, 
+.row select{
+  flex: 1;
+  height: 44px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.row button{
+  white-space: nowrap;
+}
+
+
+button{
+  min-height: 44px;
+  padding: 12px 20px;
+  background: #8559c6;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.low{color: green;}
+.medium{color: orange;}
+.high{color: red;}
+
+.delete-all{
+  margin-top: 20px;
+  width: 100%;
+  background: #333;
+}

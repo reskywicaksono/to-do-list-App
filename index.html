@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission 4 FSD- To Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="todo-app">
+
+    <!-- PROFILE -->
+    <div class="profile">
+      <img src="images/icon.png" alt="Profile Picture" class="profile-img">
+      <h3>Resky Wicaksono</h3>
+      <p>Front-End Developer</p>
+      <span id="time"></span>
+    </div>
+
+    <!-- INPUT -->
+    <div class="row">
+      <input type="text" id="taskInput" placeholder="Tulis tugas...">
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button onclick="addTask()">Submit</button>
+    </div>
+
+    <!-- TODO -->
+    <h4>To Do</h4>
+    <ul id="todoList"></ul>
+
+    <!-- DONE -->
+    <h4>Done</h4>
+    <ul id="doneList"></ul>
+
+    <button class="delete-all" onclick="deleteAll()">Delete All</button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
